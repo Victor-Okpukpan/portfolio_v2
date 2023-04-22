@@ -36,8 +36,8 @@ const Projects = ({index}) => {
   ];
 
   return (
-    <div id="projects" className="w-full m-auto px-4 py-16">
-      <div className="max-w-screen-lg p-4 mx-auto md:px-14 lg:px-0">
+    <div id="projects" className="w-full m-auto p-4">
+      <div className="max-w-screen-lg p-8 mx-auto md:px-14 lg:px-0">
         <p className='uppercase text-gray-400 font-medium'>My Works</p>
         <h1 className="text-purple-600 mb-12 text-3xl font-bold">
           Projects.

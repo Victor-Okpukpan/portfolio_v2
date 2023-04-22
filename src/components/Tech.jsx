@@ -8,7 +8,6 @@ import reactjs from "../assets/tech/reactjs.png";
 import tailwind from "../assets/tech/tailwind.png";
 import threejs from "../assets/tech/threejs.png";
 import reduxtoolkit from "../assets/tech/redux.png";
-import { motion } from "framer-motion";
 
 const Tech = () => {
     const technologies = [
@@ -49,11 +48,11 @@ const Tech = () => {
 
   return (
     <div>
-        <div className='max-w-6xl mx-auto flex flex-row flex-wrap justify-center gap-10 text-white z-[-1]'>
+        <div className='max-w-6xl mx-auto flex flex-row flex-wrap justify-center gap-10 text-white h-[50%] z-[-1]'>
         {technologies.map((technology) => (
-            <motion.div animate={{ scale: [1, 1.5, 1]}} className='w-28 h-28' key={technology.name}>
+            <div className='w-28 h-28' key={technology.name}>
                 <BallCanvas icon={technology.icon} />
-            </motion.div>
+            </div>
         ))}
     </div>
     </div>

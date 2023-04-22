@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import StarsCanvas from './components/StarsCanvas';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <SideBar />
       <Home />
       <Tech />
+      <Experience />
       <StarsCanvas />
       <Projects />
       <Contact />
