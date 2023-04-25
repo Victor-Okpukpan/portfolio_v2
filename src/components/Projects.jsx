@@ -1,9 +1,7 @@
-import React from "react";
 import TasteDelight from "../assets/Taste Delight.webp";
 import RealtorClone from "../assets/Realtor clone.webp";
 import Portfolio from "../assets/Portfolio.webp";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -50,7 +48,7 @@ const Projects = ({index}) => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-0">
           {projectItems.map(({ id, src, title, demo, code, description, alt }) => (
             <Tilt key={index} className="xs:w-[250px] w-full">
-              <motion.div data-aos="flip-right"
+              <div data-aos="flip-right"
     data-aos-duration="1000" className="w-full shadow-card">     
             <div options={{
               max: 45,
@@ -62,8 +60,9 @@ const Projects = ({index}) => {
                 loading="lazy"
                 src={src}
                 alt={alt}
-                className="rounded transition duration-200 w-full h-full object-contain"
-
+                className="rounded transition duration-200 object-contain"
+                width="100%"
+                height="100%"
               />
             </div>
             <div>
@@ -83,7 +82,7 @@ const Projects = ({index}) => {
               </button>
             </div>
           </div>
-              </motion.div>
+              </div>
             </Tilt>
             
           ))}

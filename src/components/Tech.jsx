@@ -1,4 +1,3 @@
-import React from 'react';
 import { BallCanvas } from './canvas';
 import css from "../assets/tech/css.png";
 import git from "../assets/tech/git.png";

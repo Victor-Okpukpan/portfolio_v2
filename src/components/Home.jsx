@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 import AOS from 'aos';
@@ -7,7 +6,7 @@ AOS.init();
 
 const Home = () => {
   return (
-    <motion.section data-aos="fade-left"
+    <section data-aos="fade-left"
     data-aos-anchor="#example-anchor"
     data-aos-offset="500"
     data-aos-duration="1000" id="home" className="pt-4">
@@ -31,7 +30,7 @@ const Home = () => {
         </div>
         
       </div>
-    </motion.section>
+    </section>
   );
 };
 

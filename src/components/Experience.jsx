@@ -1,10 +1,8 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { motion } from "framer-motion";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -66,15 +64,12 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <section className="max-w-screen-lg p-1 lg:p-0 mx-auto">
-      <motion.div
-      initial={{ y: -50, opacity: 0}}
-      animate={{ y: 0, opacity: 1}}
-      transition={{ type: "spring", duration: 1.25 }}
+      <div
         className="max-w-screen-lg p-5 mx-auto"
       >
         <p className="uppercase text-gray-400 font-medium">My journey so far</p>
         <h3 className="text-3xl md:text-4xl font-bold text-purple-600">Work Experience.</h3>
-      </motion.div>
+      </div>
       <div className="mt-12 flex flx-col">
         <VerticalTimeline>
             {experiences.map((experience, index) => (
