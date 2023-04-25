@@ -60,9 +60,7 @@ const Projects = ({index}) => {
                 loading="lazy"
                 src={src}
                 alt={alt}
-                className="rounded transition duration-200 object-contain"
-                width="100%"
-                height="100%"
+                className="rounded transition duration-200 w-auto h-auto object-contain"
               />
             </div>
             <div>
