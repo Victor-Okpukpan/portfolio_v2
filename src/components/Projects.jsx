@@ -62,7 +62,7 @@ const Projects = ({index}) => {
               <img
                 src={src}
                 alt={alt}
-                className="rounded transition duration-200 "
+                className="rounded transition duration-200"
               />
             </div>
             <div>

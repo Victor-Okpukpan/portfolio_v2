@@ -121,7 +121,7 @@ const Contact = () => {
                         className='text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
                     />
                 </label>
-                <motion.button animate={{y: [0, 12, 2, 0]}} transition={{ repeat: Infinity, duration: 1, delay: 1}} className="text-gray-400 hover:text-white font-medium transition duration-200 ease-in border-purple-600 border py-3 px-8 mb-2 rounded-lg outline-none w-fit">
+                <motion.button animate={{y: [0, 12, 2, 0]}} transition={{ repeat: Infinity, duration: 1, delay: 1}} className="text-gray-400 hover:text-white text-sm font-medium transition duration-200 ease-in border-purple-600 border py-3 px-8 mb-2 rounded-lg outline-none w-fit">
                     {loading ? "Sending..." : "Send"}
                 </motion.button>
             </form>
@@ -132,11 +132,11 @@ const Contact = () => {
             {contactInfo.map((info) => (
                 <li key={info.id} className='flex items-center space-x-2'>
                     <div>
-                        {<info.icon className='text-3xl text-purple-600' />}
+                        {<info.icon className='pr-1 text-3xl text-purple-600' />}
                     </div>
                     <div className='p-4 flex flex-col justify-center border-l border-l-gray-400 h-full'>
                         <label className='font-bold text-white'>{info.label}</label>
-                        <p className='text-gray-400'>{info.value}</p>
+                        <p className='text-sm text-gray-400'>{info.value}</p>
                     </div>
                 </li>
             ))}
