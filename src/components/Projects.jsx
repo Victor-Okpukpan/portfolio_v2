@@ -1,8 +1,7 @@
 import React from "react";
-
-import TasteDelight from "../assets/Taste Delight.png";
-import RealtorClone from "../assets/Realtor clone.png";
-import Portfolio from "../assets/Portfolio.png";
+import TasteDelight from "../assets/Taste Delight.webp";
+import RealtorClone from "../assets/Realtor clone.webp";
+import Portfolio from "../assets/Portfolio.webp";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import AOS from 'aos';
@@ -60,9 +59,11 @@ const Projects = ({index}) => {
             }} className="border border-gray-500 overflow-hidden rounded-lg min-h-[280px] ">
             <div key={id} className="rounded-tr-lg ">
               <img
+                loading="lazy"
                 src={src}
                 alt={alt}
-                className="rounded transition duration-200"
+                className="rounded transition duration-200 w-full h-full object-contain"
+
               />
             </div>
             <div>
