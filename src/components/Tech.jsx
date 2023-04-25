@@ -8,6 +8,10 @@ import reactjs from "../assets/tech/reactjs.png";
 import tailwind from "../assets/tech/tailwind.png";
 import threejs from "../assets/tech/threejs.png";
 import reduxtoolkit from "../assets/tech/redux.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 const Tech = () => {
     const technologies = [
@@ -40,22 +44,22 @@ const Tech = () => {
           icon: threejs,
         },
         {
-          name: "git",
+          name: "Git/Github",
           icon: git,
         },
         
       ];
 
   return (
-    <div>
-        <div className='max-w-6xl mx-auto flex flex-row flex-wrap justify-center gap-10 text-white h-[50%] z-[-1]'>
+    <section id="tech" className='max-w-6xl mx-auto mt-12 p-4 text-white h-[50%]'>
+        <div className='flex flex-row flex-wrap justify-center gap-3'>
         {technologies.map((technology) => (
-            <div className='w-28 h-28' key={technology.name}>
+            <div data-aos="fade-up" data-aos-duration="1000" className='w-28 h-28' key={technology.name} title={technology.name}>
                 <BallCanvas icon={technology.icon} />
             </div>
         ))}
     </div>
-    </div>
+    </section>
   )
 }
 

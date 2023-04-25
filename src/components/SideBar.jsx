@@ -17,7 +17,7 @@ const SideBar = () => {
   }
 
   return (
-    <div className="fixed bg-black h-14 w-full md:bg-transparent z-[100]">
+    <nav className="fixed bg-black h-14 w-full md:bg-transparent z-[100]">
       {!nav ? (
        <div className=" ">
          <AiOutlineMenu
@@ -39,34 +39,43 @@ const SideBar = () => {
           <a
             onClick={handleNav}
             href="#home"
-            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 rounded-full m-2 bg-purple-600 text-white hover:scale-110 transition ease-in duration-200"
+            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 text-white hover:text-purple-600 hover:scale-110 transition ease-in duration-200"
           >
             <AiOutlineHome size={20} />
             <span>Home</span>
           </a>
           <a
             onClick={handleNav}
+            href="#experience"
+            className="w-full flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 text-white hover:text-purple-600 hover:scale-110 transition ease-in duration-200"
+          >
+            <GrProjects size={20} />
+            <span>Experience</span>
+          </a>
+          <a
+            onClick={handleNav}
             href="#projects"
-            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 rounded-full m-2 bg-purple-600 text-white hover:scale-110 transition ease-in duration-200"
+            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 hover:text-purple-600 text-white hover:scale-110 transition ease-in duration-200"
           >
             <AiOutlineProject size={20} />
             <span>Projects</span>
           </a>
           <a
             onClick={handleNav}
-            href=""
-            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 rounded-full m-2 bg-purple-600 text-white hover:scale-110 transition ease-in duration-200"
-          >
-            <BsPerson size={20} />
-            <span>Resume</span>
-          </a>
-          <a
-            onClick={handleNav}
-            href=""
-            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 rounded-full m-2 bg-purple-600 text-white hover:scale-110 transition ease-in duration-200"
+            href="#contact"
+            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 hover:text-purple-600 text-white hover:scale-110 transition ease-in duration-200"
           >
             <AiOutlineMail size={20} />
             <span>Contact</span>
+          </a>
+          <a
+            onClick={handleNav}
+            href="./public/Victor Okpukpan's Resume.pdf"
+            download="Victor Okpukpan.pdf"
+            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 hover:text-purple-600 text-white hover:scale-110 transition ease-in duration-200"
+          >
+            <BsPerson size={20} />
+            <span>Resume</span>
           </a>
         </div>
       ) : (
@@ -75,33 +84,44 @@ const SideBar = () => {
       <div className="hidden md:block fixed top-[25%] z-10">
         <div className="flex flex-col">
           <a
-            href=""
+            href="#home"
+            title="Home"
             className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
           >
             <AiOutlineHome size={20} />
           </a>
-
           <a
-            href=""
+            href="#home"
+            title="Home"
+            className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
+          >
+            <GrProjects size={20} />
+          </a>
+          <a
+            href="#projects"
+            title="Projects"
             className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
           >
             <AiOutlineProject size={20} />
           </a>
           <a
-            href=""
-            className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
-          >
-            <BsPerson size={20} />
-          </a>
-          <a
-            href=""
+            href="#contact"
+            title="Contact"
             className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
           >
             <AiOutlineMail size={20} />
           </a>
+          <a
+            href="./public/Victor Okpukpan's Resume.pdf"
+            download="Victor Okpukpan.pdf"
+            title="Download Resume"
+            className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
+          >
+            <BsPerson size={20} />
+          </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

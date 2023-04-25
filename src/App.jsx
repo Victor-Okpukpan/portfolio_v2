@@ -5,19 +5,24 @@ import StarsCanvas from './components/StarsCanvas';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
   return (
-    <div className='relative z-0 font-MyFont bg-black'>
-      <SideBar />
-      <Home />
-      <Tech />
-      <Experience />
-      <StarsCanvas />
-      <Projects />
-      <Contact />
-    </div>
+    <BrowserRouter>
+      <div className='relative z-0 font-MyFont bg-black tracking-wider'>
+        <SideBar />
+        <Home />
+        <Experience />
+        <Tech />
+        <StarsCanvas />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 

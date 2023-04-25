@@ -1,9 +1,38 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { slideIn } from '../utils/motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaHive, FaGlobe, FaPhone, FaAt } from 'react-icons/fa';
+AOS.init();
 
 const Contact = () => {
+    const contactInfo = [
+        {
+            id: 1,
+            icon: FaHive,
+            label: 'Name',
+            value: 'Victor Okpukpan'
+        },
+        {
+            id: 2,
+            icon: FaGlobe,
+            label: 'Location',
+            value: 'Akwa-Ibom, Nigeria',
+        },
+        {
+            id: 3,
+            icon: FaPhone,
+            label: 'Call Me',
+            value: '+234 806 991 9416',
+        },
+        {
+            id: 4,
+            icon: FaAt,
+            label: 'Email',
+            value: 'vokpukpan@gmail.com',
+        }
+    ];
     const formRef = useRef();
     const [ form, setForm ] = useState({
         name: '',
@@ -46,18 +75,19 @@ const Contact = () => {
     };
 
   return (
-    <div className='max-w-screen-lg p-4 mx-auto text-white xl:mt-12 xl:flex-row flex overflow-hidden'>
+    <section id="contact" data-aos="fade-right"
+    data-aos-duration="1000" className='flex flex-col w-full gap-5 md:gap-36 p-4 lg:px-7 items-start justify-center max-w-screen-lg mx-auto text-white xl:mt-12 md:flex-row overflow-hidden'>
         <motion.div
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
-            className='flex flex-col w-full p-8 rounded-2xl md:w-[80%] lg:w-[60%] md:px-14 lg:px-0'
+            className='flex flex-col w-full md:w-1/2 p-8 rounded-2xl md:px-14 lg:px-0'
         >
             <p className='uppercase text-gray-400 font-medium'>Get in touch</p>
-            <h3 className='text-4xl font-bold text-purple-600'>Contact.</h3>
+            <h3 className='text-3xl md:text-4xl font-bold text-purple-600'>Contact.</h3>
             <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className='mt-12 flex flex-col gap-8'
+                className='mt-12 flex flex-col gap-4'
             >
                 <label className='flex flex-col'>
                     <span className='text-white font-medium mb-4'>Your Name</span>
@@ -67,7 +97,7 @@ const Contact = () => {
                         value={form.name}
                         onChange={handleChange}
                         placeholder="What's your name?"
-                        className='py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
+                        className='text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
                     />
                 </label>
                 <label className='flex flex-col'>
@@ -78,26 +108,41 @@ const Contact = () => {
                         value={form.email}
                         onChange={handleChange}
                         placeholder="What's your email?"
-                        className='py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
+                        className='text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
                     />
                 </label>
                 <label className='flex flex-col'>
                     <span className='text-white font-medium mb-4'>Your Message</span>
                     <textarea 
-                        rows="7"
                         name='message'
                         value={form.message}
                         onChange={handleChange}
                         placeholder="What do you want to say?"
-                        className='py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
+                        className='text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium'
                     />
                 </label>
-                <motion.button animate={{y: [0, 10, 2, 0]}} transition={{ repeat: Infinity, duration: 1, delay: 1}} className="text-gray-400 border-purple-600 border py-3 px-8 mb-2 rounded-lg outline-none w-fit">
+                <motion.button animate={{y: [0, 12, 2, 0]}} transition={{ repeat: Infinity, duration: 1, delay: 1}} className="text-gray-400 hover:text-white font-medium transition duration-200 ease-in border-purple-600 border py-3 px-8 mb-2 rounded-lg outline-none w-fit">
                     {loading ? "Sending..." : "Send"}
                 </motion.button>
             </form>
         </motion.div>
-    </div>
+        <div className='p-8 mt-9'>
+        <h3 className='text-3xl md:text-4xl font-bold text-purple-600 whitespace-nowrap'>Contact Info.</h3>
+        <ul className='mt-12 flex flex-col'>
+            {contactInfo.map((info) => (
+                <li key={info.id} className='flex items-center space-x-2'>
+                    <div>
+                        {<info.icon className='text-3xl text-purple-600' />}
+                    </div>
+                    <div className='p-4 flex flex-col justify-center border-l border-l-gray-400 h-full'>
+                        <label className='font-bold text-white'>{info.label}</label>
+                        <p className='text-gray-400'>{info.value}</p>
+                    </div>
+                </li>
+            ))}
+        </ul>
+        </div>
+    </section>
   )
 }
 
