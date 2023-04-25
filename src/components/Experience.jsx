@@ -63,7 +63,7 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <section className="max-w-screen-lg p-1 lg:p-0 mx-auto">
+    <section id="experience" className="max-w-screen-lg p-1 lg:p-0 mx-auto overflow-hidden">
       <div
         className="max-w-screen-lg p-5 mx-auto"
       >

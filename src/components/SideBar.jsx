@@ -19,7 +19,7 @@ const SideBar = () => {
   return (
     <nav className="fixed bg-black h-14 w-full md:bg-transparent z-[100]">
       {!nav ? (
-       <div className=" ">
+       <div className="">
          <AiOutlineMenu
           size={20}
           className="fixed top-4 right-4 transition ease-in duration-200 md:hidden text-white z-99 cursor-pointer"
@@ -91,8 +91,8 @@ const SideBar = () => {
             <AiOutlineHome size={20} />
           </a>
           <a
-            href="#home"
-            title="Home"
+            href="#experience"
+            title="Experience"
             className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
           >
             <GrProjects size={20} />

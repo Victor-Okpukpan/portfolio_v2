@@ -38,7 +38,7 @@ const Projects = ({index}) => {
   ];
 
   return (
-    <section id="projects" className="w-full m-auto p-1">
+    <section id="projects" className="w-full m-auto p-1 overflow-hidden">
       <div className="max-w-screen-lg p-5 mx-auto md:px-14 lg:px-7">
         <p className='uppercase text-gray-400 font-medium'>My Works</p>
         <h3 className="text-purple-600 mb-12 text-3xl md:text-4xl font-bold">

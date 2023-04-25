@@ -50,7 +50,7 @@ const Tech = () => {
       ];
 
   return (
-    <section id="tech" className='max-w-6xl mx-auto mt-12 p-4 text-white h-[50%]'>
+    <section id="tech" className='overflow-hidden max-w-6xl mx-auto mt-12 p-4 text-white h-[50%]'>
         <div className='flex flex-row flex-wrap justify-center gap-3'>
         {technologies.map((technology) => (
             <div data-aos="fade-up" data-aos-duration="1000" className='w-28 h-28' key={technology.name} title={technology.name}>
