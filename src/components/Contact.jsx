@@ -76,11 +76,11 @@ const Contact = () => {
 
   return (
     <section id="contact" data-aos="fade-right"
-    data-aos-duration="1000" className='flex flex-col w-full gap-5 md:gap-36 p-4 lg:px-7 items-start justify-center max-w-screen-lg mx-auto text-white xl:mt-12 md:flex-row overflow-hidden'>
+    data-aos-duration="1000" className='flex flex-col w-full gap-5 md:gap-36 p-1 lg:px-7 items-start justify-center max-w-screen-lg mx-auto text-white xl:mt-12 md:flex-row overflow-hidden'>
         <motion.div
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
-            className='flex flex-col w-full md:w-1/2 p-8 rounded-2xl md:px-14 lg:px-0'
+            className='flex flex-col w-full md:w-1/2 p-5 rounded-2xl md:px-14 lg:px-0'
         >
             <p className='uppercase text-gray-400 font-medium'>Get in touch</p>
             <h3 className='text-3xl md:text-4xl font-bold text-purple-600'>Contact.</h3>

@@ -47,9 +47,9 @@ const SideBar = () => {
           <a
             onClick={handleNav}
             href="#experience"
-            className="w-full flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 text-white hover:text-purple-600 hover:scale-110 transition ease-in duration-200"
+            className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 text-white hover:text-purple-600 hover:scale-110 transition ease-in duration-200"
           >
-            <GrProjects size={20} />
+            <GrProjects className="bg-white" size={20} />
             <span>Experience</span>
           </a>
           <a
@@ -75,7 +75,7 @@ const SideBar = () => {
             className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 hover:text-purple-600 text-white hover:scale-110 transition ease-in duration-200"
           >
             <BsPerson size={20} />
-            <span>Resume</span>
+            <span>Download Resume</span>
           </a>
         </div>
       ) : (

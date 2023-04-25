@@ -65,12 +65,12 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <section className="max-w-screen-lg p-4 lg:p-0 mx-auto">
+    <section className="max-w-screen-lg p-1 lg:p-0 mx-auto">
       <motion.div
       initial={{ y: -50, opacity: 0}}
       animate={{ y: 0, opacity: 1}}
       transition={{ type: "spring", duration: 1.25 }}
-        className="max-w-screen-lg p-8 mx-auto"
+        className="max-w-screen-lg p-5 mx-auto"
       >
         <p className="uppercase text-gray-400 font-medium">My journey so far</p>
         <h3 className="text-3xl md:text-4xl font-bold text-purple-600">Work Experience.</h3>

@@ -10,8 +10,8 @@ const Home = () => {
     <motion.section data-aos="fade-left"
     data-aos-anchor="#example-anchor"
     data-aos-offset="500"
-    data-aos-duration="1000" id="home" className="p-4">
-      <div className="max-w-6xl p-3 mx-auto h-screen mt-10 sm:mt-0">
+    data-aos-duration="1000" id="home" className="pt-4">
+      <div className="max-w-6xl p-1 mx-auto h-screen mt-10 sm:mt-0">
         <div className="w-full h-full flex flex-col justify-center items-start px-5 md:pl-20 tracking-widest">
           <p className="font-bold text-2xl sm:text-4xl lg:text-left text-gray-300 mb-6">
             Hi, I'm Victor - a <span className="text-purple-600">Frontend Developer</span> and <span className="text-purple-600">Content Writer</span>
