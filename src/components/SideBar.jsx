@@ -17,15 +17,15 @@ const SideBar = () => {
   }
 
   return (
-    <nav className="fixed bg-black h-14 w-full md:bg-transparent z-[100]">
+    <nav className="fixed bg-black h-14 w-full md:bg-transparent z-[100] overflow-hidden">
       {!nav ? (
-       <div className="">
-         <AiOutlineMenu
-          size={20}
-          className="fixed top-4 right-4 transition ease-in duration-200 md:hidden text-white z-99 cursor-pointer"
-          onClick={handleNav}
-        />
-       </div>
+        <div className="overflow-hidden">
+          <AiOutlineMenu
+            size={20}
+            className="fixed top-4 right-4 transition ease-in duration-200 md:hidden text-white z-99 cursor-pointer"
+            onClick={handleNav}
+          />
+        </div>
       ) : (
         ""
       )}
@@ -81,7 +81,7 @@ const SideBar = () => {
       ) : (
         ""
       )}
-      <div className="hidden md:block fixed top-[25%] z-10">
+      <div className="hidden md:block fixed top-[25%] z-10 overflow-hidden">
         <div className="flex flex-col">
           <a
             href="#home"
