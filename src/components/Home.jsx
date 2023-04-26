@@ -7,7 +7,7 @@ AOS.init();
 const Home = () => {
   return (
     <section
-      data-aos="fade-down"
+      data-aos="zoom-in"
       data-aos-duration="1000"
       id="home"
       className="pt-4 overflow-hidden"
