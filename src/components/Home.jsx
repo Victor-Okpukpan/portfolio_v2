@@ -35,14 +35,14 @@ const Home = () => {
           >
             Contact Me
           </motion.button>
-          <div className="w-full max-w-[200px] pt-6 flex items-center justify-between text-white">
-            <FaFacebookF
+          <div className="w-full max-w-[150px] pt-6 flex items-center justify-between text-white">
+            {/* <FaFacebookF
               onClick={() =>
                 window.open("https://www.facebook.com/sasha.blackshire.1/")
               }
               className="cursor-pointer hover:scale-125 transition ease-in duration-200"
               size={20}
-            />
+            /> */}
             <FaLinkedin
               onClick={() =>
                 window.open("https://www.linkedin.com/in/victor-okpukpan/")
