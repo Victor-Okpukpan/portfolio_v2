@@ -7,13 +7,13 @@ AOS.init();
 const Home = () => {
   return (
     <section
-      data-aos="fade-left"
+      data-aos="fade-down"
       data-aos-duration="1000"
       id="home"
       className="pt-4 overflow-hidden"
     >
       <div className="max-w-6xl p-1 mx-auto h-screen mt-1 sm:mt-0 overflow-hidden">
-        <div className="w-full h-full flex flex-col justify-center items-start px-5 md:pl-20 tracking-widest">
+        <div className="w-full h-full flex flex-wrap flex-col justify-center items-start px-5 md:pl-20 tracking-widest">
           <p className="font-bold text-2xl sm:text-4xl lg:text-left text-gray-300 mb-6">
             Hi, I'm Victor - a{" "}
             <span className="text-purple-600">Frontend Developer</span> and{" "}
