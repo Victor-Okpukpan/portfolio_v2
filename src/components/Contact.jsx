@@ -105,6 +105,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your name?"
               className="text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium"
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -116,6 +117,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your email?"
               className="text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium"
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -126,6 +128,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What do you want to say?"
               className="text-sm py-4 px-6 bg-transparent text-gray-400 rounded-lg outline-none font-medium"
+              required
             />
           </label>
           <motion.button
