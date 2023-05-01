@@ -24,13 +24,13 @@ const Contact = () => {
       id: 3,
       icon: FaPhone,
       label: "Call Me",
-      value: "+234 806 991 9416",
+      value: <a href="tel:+2348069919416">+234 806 991 9416</a>,
     },
     {
       id: 4,
       icon: FaAt,
       label: "Email",
-      value: "vokpukpan@gmail.com",
+      value: <a href="mailto:vokpukpan@gmail.com">vokpukpan@gmail.com</a>,
     },
   ];
   const formRef = useRef();
