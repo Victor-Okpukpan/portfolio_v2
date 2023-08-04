@@ -21,7 +21,7 @@
     "react-icons": "^4.8.0",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",
-    "react-tilt": "^1.0.2",
+    "react-lazy-with-preload": "^2.2.1",
     "react-type-animation": "^3.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.151.3"
