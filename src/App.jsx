@@ -29,7 +29,7 @@ function App() {
             className="w-full h-screen bg-black text-purple-600 flex items-center justify-center"
           >
             <div>
-              <p className="text-3xl md:text-4xl font-bold">Loading...</p>
+              <p className="text-3xl md:text-4xl font-bold animate-pulse">Welcome To My Portfolio</p>
             </div>
           </section>
         }

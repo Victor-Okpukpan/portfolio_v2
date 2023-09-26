@@ -3,10 +3,12 @@ import css from "../assets/tech/css.png";
 import git from "../assets/tech/git.png";
 import html from "../assets/tech/html.png";
 import javascript from "../assets/tech/javascript.png";
+import nextjs from "../assets/tech/nextjs.svg";
 import reactjs from "../assets/tech/reactjs.png";
 import tailwind from "../assets/tech/tailwind.png";
 import threejs from "../assets/tech/threejs.png";
 import reduxtoolkit from "../assets/tech/redux.png";
+import typescript from "../assets/tech/ts.svg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -26,21 +28,29 @@ const Tech = () => {
       icon: javascript,
     },
     {
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: reduxtoolkit,
+      name: "Typescript",
+      icon: typescript,
     },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: reduxtoolkit,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "Git/Github",
       icon: git,

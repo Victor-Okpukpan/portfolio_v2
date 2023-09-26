@@ -70,7 +70,7 @@ const SideBar = () => {
           </a>
           <a
             onClick={handleNav}
-            href="/Victor Okpukpan's Resume.pdf"
+            href="/Victor Okpukpan.docx.pdf"
             download="Victor Okpukpan.pdf"
             className="w-[75%] flex justify-center items-center space-x-2 font-medium shadow-md p-4 m-2 hover:text-purple-600 text-white hover:scale-110 transition ease-in duration-200"
           >
@@ -112,7 +112,7 @@ const SideBar = () => {
             <AiOutlineMail size={20} />
           </a>
           <a
-            href="/Victor Okpukpan's Resume.pdf"
+            href="/Victor Okpukpan.docx.pdf"
             download="Victor Okpukpan.pdf"
             title="Download Resume"
             className="rounded-full m-2 p-4 shadow-md hover:scale-110 bg-gray-100 cursor-pointer transition ease-in duration-200"
