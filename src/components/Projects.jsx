@@ -17,36 +17,36 @@ const Projects = ({ index }) => {
       description:
         "A website for an NGO dedicated to promoting literacy built with React, Tailwind CSS and Sanity CMS",
     },
-    {
-      id: 2,
-      src: RealtorClone,
-      alt: "Realtor Estate Clone Website",
-      title: "Realtor Clone",
-      demo: "https://realtor-clone-by-victor.vercel.app/",
-      code: "https://github.com/Victor-Okpukpan/realtor-clone-react",
-      description:
-        "A fully functional real estate website built with React, Tailwind CSS and Firebase.",
-    },
-    {
-      id: 3,
-      src: TasteDelight,
-      alt: "Taste Delight Restaurant Website",
-      title: "Taste Delight Restaurant",
-      demo: "https://taste-delight.vercel.app/",
-      code: "https://github.com/Victor-Okpukpan/Taste-Delight-2.0",
-      description:
-        "A responsive restaurant website built with HTML, CSS, and JavaScript.",
-    },
-    {
-      id: 4,
-      src: Portfolio,
-      alt: "Portfolio Website",
-      title: "Portfolio Website v1",
-      demo: "https://vokpukpan.vercel.app/",
-      code: "https://github.com/Victor-Okpukpan/Portfolio-Website",
-      description:
-        "My first portfolio website built with HTML, CSS, and JavaScript.",
-    },
+    // {
+    //   id: 2,
+    //   src: RealtorClone,
+    //   alt: "Realtor Estate Clone Website",
+    //   title: "Realtor Clone",
+    //   demo: "https://realtor-clone-by-victor.vercel.app/",
+    //   code: "https://github.com/Victor-Okpukpan/realtor-clone-react",
+    //   description:
+    //     "A fully functional real estate website built with React, Tailwind CSS and Firebase.",
+    // },
+    // {
+    //   id: 3,
+    //   src: TasteDelight,
+    //   alt: "Taste Delight Restaurant Website",
+    //   title: "Taste Delight Restaurant",
+    //   demo: "https://taste-delight.vercel.app/",
+    //   code: "https://github.com/Victor-Okpukpan/Taste-Delight-2.0",
+    //   description:
+    //     "A responsive restaurant website built with HTML, CSS, and JavaScript.",
+    // },
+    // {
+    //   id: 4,
+    //   src: Portfolio,
+    //   alt: "Portfolio Website",
+    //   title: "Portfolio Website v1",
+    //   demo: "https://vokpukpan.vercel.app/",
+    //   code: "https://github.com/Victor-Okpukpan/Portfolio-Website",
+    //   description:
+    //     "My first portfolio website built with HTML, CSS, and JavaScript.",
+    // },
   ];
 
   return (
